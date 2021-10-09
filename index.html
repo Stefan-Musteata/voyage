@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Voyage</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/kiwork/dist/font/font-awesome/font-awesome.min.css">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="/kiwork/dist/css/normalize.css">
+    <!-- My style css -->
+    <link rel="stylesheet" href="/kiwork/css/main.css">
+    <!-- Datepicker design -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/kiwork/index.html">
+            <img src="/kiwork/img/logo.png" alt="Logo">
+          </a>
+        </div>
+  
+        <div class="menu-bars">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a href="/" class="active">HOME</a>
+          <a href="/">DESTINATIONS</a>
+          <a href="/">CRUISES</a>
+          <a href="/">SPECIALIS</a>
+          <a href="/">HOLIDALYS</a>
+          <a href="/">BLOG</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slider-control slide-left"><i class="fa fa-angle-left fa-2x"></i></div>
+      <div class="slider-control slide-right"><i class="fa fa-angle-right fa-2x"></i></div>
+      <div class="slide-box">
+        <div class="slide" style="background-image: linear-gradient( rgba(44, 62, 80, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url(../kiwork/img/1.png)">
+          <div class="slide-content">
+            <H1>TO TRAVEL IS TO LIVE</H1>
+            <p>You Don’t Need Magic to Disappear. All you need is a destination.</p>
+            <div class="slider-buttons">
+              <a href="/" class="btn-default">SHOW ON MAP</a>
+              <a href="/" class="btn-transparent">MORE INFO</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient( rgba(44, 62, 80, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url(../kiwork/img/2.jpg)">
+          <div class="slide-content">
+            <H1>TO TRAVEL IS TO LIVE</H1>
+            <p>You Don’t Need Magic to Disappear. All you need is a destination.</p>
+            <div class="slider-buttons">
+              <a href="/" class="btn-default">SHOW ON MAP</a>
+              <a href="/" class="btn-default">MORE INFO</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient( rgba(44, 62, 80, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url(../kiwork/img/3.jpg)">
+          <div class="slide-content">
+            <H1>TO TRAVEL IS TO LIVE</H1>
+            <p>You Don’t Need Magic to Disappear. All you need is a destination.</p>
+            <div class="slider-buttons">
+              <a href="/" class="btn-default">SHOW ON MAP</a>
+              <a href="/" class="btn-default">MORE INFO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section holiday -->
+    <section class="bg-grey">
+      <div class="container">
+        <div class="holidays">
+          <div class="title">
+            <div class="corner"></div>
+            <span>FIND OUR</span>
+            <h2>HOLIDAYS</h2>
+          </div>
+          <form action="/" method="post">
+            <div class="input">
+              <span>Where</span>
+              <div class="autocomplete">
+                <input type="text" placeholder="Destionation" onkeyup="getValue(this.value)">
+                <i class="fa fa-globe"></i>
+                <div class="autocomplete-list"></div>
+              </div>
+            </div>
+            <div class="input">
+              <span>When</span>
+              <input type="text" id="datepicker" placeholder="Select date">
+              <i class="fa fa-calendar"></i>
+            </div>
+            <button type="submit" class="btn-default">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="newsletter">
+              <h3>Newsletter</h3>
+              <p>
+                Subscribe now to receive fresh deals and offers by E-mail:
+              </p>
+              <form action="/" method="POST">
+                <input type="email" class="subscribe" placeholder="Subscribe...">
+                <button type="submit" class="btn-default submit-subscribe">GO</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <h3>Latest News</h3>
+            <div class="item">
+              <img src="/kiwork/img/item.png" alt="post">
+              <div class="title">
+                Postformat Gallery: Multiple images
+              </div>
+              <div class="date">
+                September 2, 2022 - 23:02
+              </div>
+            </div>
+            <div class="item">
+              <img src="/kiwork/img/item.png" alt="post">
+              <div class="title">
+                Postformat Gallery: Multiple images
+              </div>
+              <div class="date">
+                September 2, 2022 - 23:02
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="tags">
+              <h3>Tags</h3>
+              <a href="/">Agent Login</a>
+              <a href="/">Customer Login</a>
+              <a href="/">New Horizons</a>
+              <a href="/">Landscape</a>
+              <a href="/">Tags</a>
+              <a href="/">Not a Member?</a>
+              <a href="/">Contact</a>
+              <a href="/">Value</a>
+              <a href="/">Nice</a>
+              <a href="/">Portrait</a>
+              <a href="/">Frame</a>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="address">
+              <h3>Address</h3>
+              <p>
+              4140 Parker Rd. Allentown, New Mexico 31134.
+              </p>
+              <span>Email: </span>voyage.travel@mailgenerator.com
+              <div class="social-media">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Library JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!-- My script -->
+    <script src="/kiwork/js/main.js"></script>
+    
+</body>
+</html>
