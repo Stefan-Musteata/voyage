@@ -339,6 +339,10 @@ footer .item {
   float: left;
   width: 100%;
 }
+footer .item a {
+  color: #fff;
+  text-decoration: none;
+}
 footer img {
   float: left;
   width: 32px;
@@ -372,6 +376,10 @@ footer .social-media i {
   border-radius: 100%;
   padding: 13px 10px 7px 10px;
   margin-right: 10px;
+}
+
+footer .social-media a { 
+  color: #fff;
 }
 
 footer .address span {
